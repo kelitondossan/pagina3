@@ -1,0 +1,167 @@
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Definições do cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333;
+}
+
+header img {
+    border-radius: 50%;
+    position: absolute;
+  top: 20px;
+  left: 20px;
+   max-width: 100%;
+    height: auto;
+    
+}
+
+/* Definições do corpo principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+  font-size: 28px;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        font-family: Arial, sans-serif;
+        font-size: 28px;
+        color: #333;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Animação de fundo */
+body {
+    animation: bg-animation 3s linear infinite alternate;
+}
+
+@keyframes bg-animation {
+    from {
+        background-color: #2b2828;
+    }
+    to {
+        background-color: #dcdddf;
+    }
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #0056b3;
+  }

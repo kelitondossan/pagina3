@@ -1,0 +1,214 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-colo:rgba(0,0,0,0.5);
+  background: url('https://i.giphy.com/l2Sq61wvnONnxZjWw.gif') no-repeat center center fixed;
+  background-size: cover;
+  animation: backgroundAnimation 15s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: slide-up 0.8s ease-out;
+}
+
+header {
+  padding: 20px;
+  background-color: #c7c1c1;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#themeSwithcer {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease-out;
+}
+
+#themeSwithcer:hover {
+  opacity: 0.7;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+#keys button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: transform 0.3s ease-out;
+}
+
+#keys button:hover {
+  transform: scale(1.1);
+}
+
+#keys button:active {
+  transform: scale(0.9);
+}
+
+#keys button.charKey {
+  background-color: #c7c7c7;
+}
+
+section {
+  padding: 10px 20px;
+  background-color: #3f3f3f;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+input::placeholder {
+  color: rgb(43, 38, 38);
+}
+
+#result {
+  width: 100%;
+  color:#f0f0f0;
+}
+
+/* Dark mode styles */
+main[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+main[data-theme="dark"] header {
+  background-color: #807d7d;
+  color: white;
+}
+
+main[data-theme="dark"] #keys button {
+  background-color: rgb(179, 49, 49);
+  color: white;
+}
+
+main[data-theme="dark"] #keys button.charKey {
+  background-color: #cebaba;
+}
+
+main[data-theme="dark"] section {
+  background-color: #191919;
+  color: rgb(141, 20, 20);
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  #keys {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #copyToClipboard,
+  #result {
+    font-size: 1rem;
+  }
+}
+
+/* Animações */
+/* Definindo a animação */
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Aplicando a animação em um elemento */
+.example-element {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* Estilos para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .example-element {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para telas médias */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .example-element {
+    font-size: 20px;
+  }
+}
+
+/* Estilos para telas grandes */
+@media only screen and (min-width: 901px) {
+  .example-element {
+    font-size: 24px;
+  }
+}
+
+
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}

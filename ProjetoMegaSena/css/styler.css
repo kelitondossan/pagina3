@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image: url("https://i.imgur.com/GAWOwP0.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    padding: 20px;
+    background-color: #2B2B2B;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: bounce 1s ease-in-out;
+}
+
+li:hover {
+    background-color: #F9A602;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #004B8D;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #F9A602;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#megasena-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#megasena-board ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#megasena-board li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#megasena-board li:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+#megasena-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#megasena-buttons button {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#megasena-buttons button:hover {
+    background-color: #218838;
+}
+
+#megasena-saved-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#megasena-saved-games ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#megasena-saved-games li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ffc107;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #0056b3;
+  }
+  
